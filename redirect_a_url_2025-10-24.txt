@@ -1,0 +1,30 @@
+Redirecting a URL involves sending users and search engines from one web address to another. Here are three common methods to achieve this:
+
+1. Server-Side Redirect (Recommended for SEO)
+This is the most reliable and SEO-friendly method. Use a 301 redirect for permanent changes or a 302 redirect for temporary ones.
+Example (Using .htaccess for Apache Servers):
+Apache# Permanent Redirect (301)
+Redirect 301 /old-page https://www.example.com/new-page
+
+# Temporary Redirect (302)
+Redirect 302 /old-page https://www.example.com/new-page
+
+
+2. Client-Side Redirect (HTML or JavaScript)
+This method is less ideal for SEO but works when server access is unavailable.
+Example (HTML Meta Refresh):
+Html<meta http-equiv="refresh" content="0;url=https://www.example.com/new-page">
+
+Example (JavaScript Redirect):
+Javascriptwindow.location.href = "https://www.example.com/new-page";
+
+
+3. PHP Redirect
+If your website uses PHP, you can redirect using the following code:
+Php<?php
+header("Location: https://www.example.com/new-page", true, 301);
+exit();
+?>
+
+
+Each method has its use case, but server-side redirects are generally preferred for maintaining SEO rankings and ensuring a smooth user experience.
