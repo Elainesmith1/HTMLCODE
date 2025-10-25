@@ -1,0 +1,21 @@
+Here’s a simple example of how to create a hyperlink in HTML:
+Html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Link Example</title>
+</head>
+<body>
+    <!-- Basic hyperlink -->
+    <a href="https://www.example.com" target="_blank">Visit Example Website</a>
+</body>
+</html>
+
+Explanation:
+
+<a> tag: This is the anchor tag used to create hyperlinks.
+href attribute: Specifies the URL of the page the link points to.
+target="_blank": Opens the link in a new tab or window.
+
+Feel free to replace the URL and text with your desired content!
